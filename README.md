@@ -1,40 +1,7 @@
-# Release bot
+# Gate
 
-## Goals
+Refers to a check on a specific release of a project. The gate is a set of rules that must be met in order to pass the gates. Passing the gates means that the release can be promoted.
 
-Release-bot is able to generate new versions
+## Description
 
-
-                    v0.0.0-stable
-                        ^
-                        |
-                        |
-                    v0.0.0-rc.1                 rc == release-candidate             
-        ^               ^
-        |               |
-        |               |
-    v0.0.0-dev.1    v0.0.0-dev.2        v0.1.0-dev.1  v1.0.0   dev == dev-channel
-main <-- - -- ------- -------------------  -    -------- -   ---- ->
-         ^          ^                                    ^ (breaking change)
-
-
-
-                 v0.0.1-rc.1
-                    |
-v0.0.0-stable ----- - ----
-                    ^
-
-
-1. Automates versioning ( tags the commit with its respective verison )
-2. Promotion workflow ( promote a version from one channel to another )
-3. Changelog generation ( generate changelog for a given version )
-4. Automates the creation of releases
-5. Automates the creation of maintenance branches
-6. Automated cherry pick ( TODO RESEARCH )
-
--------------------------
-| Automated cherry pick |
--------------------------
-
-
-
+This module offers the possibility to extend the process by adding more gates
