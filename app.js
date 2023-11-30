@@ -7,5 +7,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Sere is running at http://localhost:${port}`);
+  console.log(`See is running at http://localhost:${port}`);
 });
