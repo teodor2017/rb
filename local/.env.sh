@@ -1,0 +1,9 @@
+export GITHUB_APP_ID="648679"
+export GITHUB_CLIENT_ID="Iv1.eaea07b2e8f40267"
+export GITHUB_CLIENT_SECRET="cdf27ebc3cde1da46604a43dac5291fffa011871"
+export GITHUB_WEBHOOK_SECRET="atle"
+export REDIS_ENDPOINT=localhost
+export REDIS_PASSWORD=
+export REDIS_USERNAME=
+export REDIS_PORT="6379"
+export GITHUB_APP_PRIVATE_KEY="$(cat .local/.gh.pem)"
