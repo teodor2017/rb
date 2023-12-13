@@ -1,8 +1,22 @@
 channels:
-  - name: main
+  - channel:
+      approvals: 
+        allowed_approvers: []
+        required: 0
+      enforce_checks: false
+      enforce_prior_version: false
+      name: ""
+      auto_delete_branch: false
+      mark_as_prerelease: false
+      clean_maintenance_branch: false
+      create_maintenance_branch: false
 
+cherry_pick: 
+  enable: false
+  destination_branches: []
+  match_regx: []
 
-default_branch: main
+default_branch: ""
 
 versioning:
   default_build: 0
