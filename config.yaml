@@ -1,1 +1,13 @@
-channels
+channels: 1
+default_branch: main
+versioning: include('versioning_options', required=True)
+---
+channel: 
+  name: main
+
+---
+versioning_options:
+  default_build: 0
+  default_major: 1
+  default_minor: 0
+  default_patch: 1
