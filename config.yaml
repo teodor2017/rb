@@ -1,13 +1,21 @@
-channels: 1
-default_branch: main
-versioning: include('versioning_options', required=True)
----
-channel: 
-  name: main
+channels:
+  - name: main
+    enforce_checks: true
+    mark_as_prerelease: true
 
----
-versioning_options:
-  default_build: 0
+cherry_pick:
+  enable: true
+  destination_branches:
+    - release-1.0
+    - release-2.0
+  match_regx:
+    - feature/*
+    - hotfix/*
+
+default_branch: main
+
+versioning:
+  default_build: 1
   default_major: 1
   default_minor: 0
-  default_patch: 1
+  default_patch: 0
