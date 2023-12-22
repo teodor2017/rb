@@ -1,25 +1,21 @@
-channels:
-  - channel:
-      approvals: 
-        allowed_approvers: []
-        required: 0
-      enforce_checks: false
-      enforce_prior_version: false
-      name: ""
-      auto_delete_branch: false
-      mark_as_prerelease: false
-      clean_maintenance_branch: false
-      create_maintenance_branch: false
-
-cherry_pick: 
-  enable: false
-  destination_branches: []
-  match_regx: []
-
-default_branch: ""
-
+default_branch: "main"
 versioning:
-  default_build: 0
   default_major: 0
   default_minor: 0
   default_patch: 0
+create_maintenance_branch: true
+release_trigger:
+  enable: false
+  token: "bump-version"
+channels:
+  - name: "next"
+    gates:
+      workflows:
+        enable: true
+        required_workflows: ["*"]
+      approvals:
+        enable: false
+        required_approvers: ["*"]
+    release:
+      create_release: false
+      prerelease: true
