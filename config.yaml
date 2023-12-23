@@ -1,17 +1,14 @@
+default_branch: "main"
 versioning:
   default_major: 0
   default_minor: 0
   default_patch: 0
-default_branch: "main"
 create_maintenance_branch: true
 release_trigger:
   enable: false
   token: "bump-version"
 channels:
-    name: "next"
-    house_keeping:
-      delete_unpromoted_tags: false
-      delete_unpromoted_branches: false
+  - name: "next"
     gates:
       workflows:
         enable: true
