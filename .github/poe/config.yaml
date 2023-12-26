@@ -15,7 +15,6 @@ channels:
         create_release: false
         prerelease: true
 default_branch: "main"
-create_maintenance_branch: true
 release_trigger:
   enable: false
   token: "bump-version"
