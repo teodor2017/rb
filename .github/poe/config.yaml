@@ -19,3 +19,4 @@ create_maintenance_branch: true
 release_trigger:
   enable: false
   token: "bump-version"
+  
