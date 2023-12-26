@@ -16,9 +16,9 @@ channels:
       approvals:
         enable: false
         required_approvers: ["*"]
-  house_keeping:
-      delete_unpromoted_tags: 
-      delete_unpromoted_branches: 
-  release:
-      create_release: false
-      prerelease: true
+    house_keeping:
+        delete_unpromoted_tags: 
+        delete_unpromoted_branches: 
+    release:
+        create_release: false
+        prerelease: true
