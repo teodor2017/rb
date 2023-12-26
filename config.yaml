@@ -1,1 +1,21 @@
-asd
+versioning:
+  default_major: 0
+  default_minor: 0
+  default_patch: 0
+channels:
+  - name: "next"
+    gates:
+      workflows:
+        enable: true
+        required_workflows: ["*"]
+      approvals:
+        enable: false
+        required_approvers: ["*"]
+      release:
+        create_release: false
+        prerelease: true
+default_branch: "main"
+create_maintenance_branch: true
+release_trigger:
+  enable: false
+  token: "bump-version"
