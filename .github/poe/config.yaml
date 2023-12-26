@@ -17,4 +17,4 @@ channels:
 default_branch: "main"
 release_trigger:
   enable: false
-  token: "bump-version"
+  token: "bump-version
