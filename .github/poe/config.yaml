@@ -21,4 +21,4 @@ channels:
       delete_unpromoted_branches: 
     release:
       create_release: false
-      prerelease: true
+      prerelease: "a"
