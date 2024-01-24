@@ -19,6 +19,6 @@ channels:
     house_keeping:
       delete_unpromoted_tags: 
       delete_unpromoted_branches: 
-    release:
+    release
       create_release: false
       prerelease: true
