@@ -20,5 +20,5 @@ channels:
       delete_unpromoted_tags:
       delete_unpromoted_branches: 
     release:
-      create_release: 
+      create_release: false
       prerelease: true
